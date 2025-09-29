@@ -47,4 +47,13 @@ public class Musica extends Audio {
     public void setDuracao(double duracao) {
         this.duracao = duracao;
     }
+
+    @Override
+    public int getCurtidas() {
+        if(this.getTotalDeReproducoes()  > 3000){
+            return 10;
+
+        }else
+            return 5;
+    }
 }

@@ -2,6 +2,7 @@ package br.com.mymusic.principal;
 
 import br.com.mymusic.model.Musica;
 import br.com.mymusic.model.Podcast;
+import br.com.mymusic.model.minhasPreferencias;
 
 public class Principal {
 
@@ -35,7 +36,7 @@ public class Principal {
             myPodcast.setClassificacao(16);
 
 
-        for (int i = 0; i < 2000; i++) {
+        for (int i = 0; i < 3000; i++) {
             myPodcast.reproduzir();
 
         }
@@ -43,7 +44,10 @@ public class Principal {
             myPodcast.curtir();
 
         }
+        minhasPreferencias mypreferencies = new minhasPreferencias();
 
+        mypreferencies.incluir(myMusic);
+       mypreferencies.incluir(myPodcast);
     }
 
     }

@@ -47,4 +47,13 @@ public class Podcast extends Audio {
     public void setConvidados(String convidados) {
         this.convidados = convidados;
     }
+
+    @Override
+    public int getClassificacao() {
+if(this.getCurtidas() > 500){
+    return 10;
+        }else {
+    return 8;
+        }
+    }
 }
